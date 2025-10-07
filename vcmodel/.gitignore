@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Ultralytics/YOLO
+runs/
+
+# Datasets: 忽略整个 dataset 目录，但保留配置文件
+dataset/
+!dataset/dataset.yaml
+!dataset/README.md
+
+# 大模型文件（如果不想进 Git，就忽略；想提交 yolov8n.pt 则保留下面这行例外）
+*.pt
+*.onnx
+!yolov8n.pt
